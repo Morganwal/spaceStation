@@ -1,0 +1,312 @@
+html {
+    font-family: sans-serif;
+    font-size: 62.5%
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#home {
+    background: url(../images/planets.jpg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 350px;
+    padding-bottom: 500px;
+    color: gold;
+}
+
+.head-main {
+    text-shadow: 2px 4px 5px rgb(0, 208, 255);
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    font-family: monospace;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: white;
+}
+
+footer,
+nav {
+    display: block;
+}
+
+h1 {
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: fuchsia;
+    text-shadow: 2px 2px 3px rgb(0, 208, 255);
+}
+
+h1::after { /* This is the underline affect */
+    display: block;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background-color: fuchsia;
+    margin: 5px auto 40px;
+}
+
+h2 {
+    line-height: 50px;
+    color: blueviolet
+}
+
+h3 {
+    line-height: 50px;
+    padding-bottom: 20px;
+}
+
+p {
+    font-weight: 300;
+    line-height: 15px;
+    padding-bottom: 15px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.heading-padding {
+    padding-bottom: 40px;
+}
+
+section{
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.container {
+    padding-right: 15px
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 1px;
+    border: 1px solid black;
+    background-color: black;
+    box-shadow: 2px 2px 10px rgb(0, 208, 255);
+
+}
+
+.photo-container {
+    text-align: center;
+    margin: 15px auto;
+    width: 290px; 
+    height: 169px;
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 300px;
+    height: 169px;
+
+}
+
+.photo-overlay {
+    color: aquamarine;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right:20px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+}
+
+.white-head {
+    color: blueviolet;
+    margin-top: 5%;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.photo-overlay {
+    opacity: 0;
+    transition: opacity .1s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.photo-overlay p {
+    width: 100%;
+    height: 100%;
+    color: gold;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+photo img {
+    transition: transform 1.5s;
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 2px 2px 10px 0 rgb(0, 208, 255);
+}
+
+#contact {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.reservation h2 {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(0, 208, 255);
+    font-weight: 900;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: .4pt;
+    word-spacing: .3pt;
+}
+
+.reservation form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .5);
+    padding: 12px 12px;
+    width: 70%;
+    border: 1px solid fuchsia;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 2px 2px 3px 0px rgb(0, 208, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.reservation input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: rgb(0, 208, 255);
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 2px solid rgb(0, 208, 255);
+    border-left: 1px solid fuchsia;
+    border-right: 2px solid rgb(0, 208, 255);
+    border-bottom: 1px solid fuchsia;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, .5);
+    /* box-shadow: inset 0px 3px 0px 0px yellow; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.form-spacer {
+    padding: 30px 30px;
+}
+
+.terms {
+    margin: 30px 1px 0 0;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: rgb(0, 208, 255);
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
+}
+
+.terms:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.submit input[type="submit"] {
+    color: rgb(0, 208, 255);
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width: 25%;
+    font-size: 15px;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: grey;
+    box-shadow: 2px 2px 3px 0 rgb(0, 208, 255);
+}
+
+.submit input[type="submit"]:hover {
+    color: fuchsia;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 2px 2px 3px 0 fuchsia;
+}
+
+.menu {
+    color: rgb(0, 208, 255);
+    font: bold 12px/18px sans serif;
+    text-align: center;
+    display: inline;
+    margin: 0% auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.menu li {
+    color: rgb(0, 208, 255);
+    background-color: rgba(0, 0, 0, .5);
+    display: inline;
+    margin: 0% auto;
+    position: center;
+    padding: 15px 4%;
+    box-shadow: 2px 2px 3px 0 rgb(0, 208, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0s;
+    transition-timing-function: ease-in-out;
+    
+    
+}
+
+.menu li:hover {
+    color: fuchsia;
+    background-color: rgb(0, 208, 255);
+}
+
+.wrap {
+    
+    
+    
+}
