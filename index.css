@@ -1,7 +1,7 @@
 html {
     font-family: sans-serif;
     font-size: 62.5%
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    
 }
 
 #home {
@@ -14,10 +14,12 @@ html {
     padding-top: 350px;
     padding-bottom: 500px;
     color: gold;
+    
 }
 
 .head-main {
     text-shadow: 2px 4px 5px rgb(0, 208, 255);
+    font-size: 34px;
 }
 
 body {
@@ -83,10 +85,8 @@ section{
 }
 
 .container {
-    padding-right: 15px
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 15px
+    
 }
 
 
@@ -305,8 +305,20 @@ photo img {
     background-color: rgb(0, 208, 255);
 }
 
+.rsvp-text {
+    text-align: center;
+}
+
+.menu {
+    display: block;
+    margin: 4%;
+}
+
+#link {
+    text-decoration: none;
+    
+}
+
 .wrap {
-    
-    
-    
+    position: relative;
 }
